@@ -171,6 +171,7 @@ body {
     flex-direction: column; */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     display: inline-block;
+    cursor: pointer;
   }
 
   .home-onging-card1-content,
@@ -501,6 +502,7 @@ body {
     flex-direction: column; */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     display: inline-block;
+    cursor: pointer;
   }
 
   .home-onging-card1-content,
@@ -828,6 +830,7 @@ body {
     flex-direction: column; */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
     display: inline-block;
+    cursor: pointer;
   }
 
   .home-onging-card1-content,
