@@ -1,0 +1,120 @@
+/* base.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #000;
+  background-color: #F9F9F9;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/* 页面 */
+.wrapper {
+  margin: 0 auto;
+  width: 1240px;
+}
+
+.title {
+  margin-top: 100px;
+}
+
+.title h1 {
+  text-align: center;
+}
+
+
+/* 排序器 */
+.dropdown {
+  font-size: 24px;
+}
+
+.sort-select {
+  height: 50px;
+  font-size: 24px;
+  background-color: #d9d9d9;
+  padding: 8px 12px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* card */
+ul,
+ol {
+  list-style: none;
+}
+
+.bd ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.bd li {
+  margin-top: 50px;
+  width: 340px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.bd a {
+  padding: 20px;
+}
+
+.bd .txt {
+  width: 100%;
+}
+
+.bd li .txt {
+  text-align: center;
+}
+
+.bd .txt h4 {
+  height: 70px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  max-height: 3em;
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0 20px;
+  color: #6E624B;
+}
+
+.bd p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.bd p span {
+  margin-left: 3px;
+  font-size: 22px;
+}
+
+.footer {
+  background-color: #383838;
+  height: 40px;
+}
+
+.footer .txt {
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
