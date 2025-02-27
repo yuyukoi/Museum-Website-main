@@ -71,7 +71,6 @@ ol {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 50px;
 }
 
 .bd li {
@@ -122,6 +121,7 @@ ol {
 }
 
 .footer {
+  margin-top: 50px;
   background-color: #383838;
   height: 40px;
 }

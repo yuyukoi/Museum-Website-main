@@ -1,0 +1,103 @@
+/* base.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.5 "Microsoft Yahei",
+    "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+  color: #000;
+  background-color: #F9F9F9;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+/* fixed button */
+.fixed-btn {
+  position: fixed;
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: 120px;
+  background-color: #d9d9d9;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* 页面 */
+.wrapper {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.title {
+  margin-top: 100px;
+}
+
+.title h1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+/* body */
+.QAList {
+  padding-bottom: 20px;
+}
+
+.Q {
+  margin-top: 30px;
+  padding: 4px 20px;
+}
+
+.QAList .left {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.QAList .Q .right {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.A {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.A .right {
+  padding: 10px;
+  display: block;
+}
+
+.QAList .A .right {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #383838;
+  height: 40px;
+}
+
+.footer .txt {
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
