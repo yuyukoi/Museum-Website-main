@@ -1,8 +1,974 @@
 body {
-    
+	font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(233, 233, 233);
+  margin: 0;
 }
 
-.home-header {
+@media(max-width:1600px) {
+  .home-header {
     background-color: black;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 1550px;
+  }
 
+  .search-bar{
+    height: 40px;
+    margin: auto 70px auto 30px;
+  }
+
+  .hearder-p {
+    color: white;
+    cursor: pointer;
+      
+  }
+
+  .header-logo {
+    height: 70px;
+    margin: 10px 20px auto 30px;
+  }
+
+  .header-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-self: center; */
+  }
+  .header-trans {
+    align-self: center;
+    /* margin: auto 20px auto 20px; */
+    padding-right: 30px;
+    border-right: 1px solid white;
+  }
+
+  .home-welcome {
+    margin-top: 80px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+
+
+
+
+  .home-title {
+
+    margin: 40px 10px;
+  }
+
+  .home-title-1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin:20px auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .home-title-2,
+  .home-title-3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px auto;
+  }
+
+  .welcome-p {
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    font-size: 24px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .welcome-p img {
+    margin-right:10px;
+    height: 40px;
+  }
+
+  .welcome-p u {
+    color: rgb(129, 129, 255);
+    cursor: pointer;
+  }
+
+  .home-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 1000px;
+    height: 700px;
+    margin-left: 80px;
+
+  }
+
+  .home-picture1 {
+    margin-top: 120px;
+  }
+  .home-picture2 {
+    margin-top: 70px;
+  }
+  .home-picture3 {
+    padding-top: 20px;
+  }
+
+  .home-picture-word {
+    color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    line-height: 10px;
+    align-items: end;
+    margin-right: 50px;
+  }
+
+  .home-welcome-word1 {
+    margin-left: 120px;
+  }
+
+  .home-onging,
+  .home-upcoming {
+    margin-left: 30px;
+  }
+
+  .home-onging-title, 
+  .home-upcoming-title {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+
+  .home-onging-card,
+  .home-upcoming-card {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* width: 2000px; */
+    /* white-space: nowrap; */
+  }
+
+  .home-onging-card1,
+  .home-upcoming-card1 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .home-onging-card1-content,
+  .home-upcoming-card1-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 24px;
+    /* justify-content: space-between; */
+  }
+
+  .home-onging-card1-title,
+  .home-upcoming-card1-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 30px;
+  }
+
+  .home-onging-card1-date,
+  .home-upcoming-card1-date {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+
+  .home-onging-card1-date img,
+  .home-upcoming-card1-date img {
+    height: fit-content;
+  }
+
+  .home-onging-card1-date p,
+  .home-upcoming-card1-date p {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .home-onging-card1-description,
+  .home-upcoming-card1-description {
+    margin: 30px;
+    font-size: 20px;
+    color: grey;
+    line-height: 30px;
+  }
+
+  .home-footer-image {
+    margin-top: 250px;
+  }
+
+  .home-footer-image img {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: -10px;
+  }
+
+  .home-footer {
+    height: 500px;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 30px;
+  }
+
+  .home-footer-title {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+  }
+
+  .home-footer-content1,
+  .home-footer-content2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+  }
+
+  .home-footer-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home-footer-selector {
+    display: grid;
+    grid-template-columns: 120px 150px 150px;
+    row-gap: 50px;
+    margin-top: 50px;
+    column-gap: 20px;
+    cursor: pointer;
+  }
+
+  .home-footer-contactnum {
+    margin-top: 180px;
+    margin-right: 50px;
+  }
+
+  .home-footer-contactnum u {
+    cursor: pointer;
+  }
+
+  .home-footer-privacy {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .privacy-statement,
+  .copyright-disclaimer {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+    margin: 80px 50px 0 0;
+  }
+
+  .home-footer-ticket,
+  .home-footer-calendar,
+  .home-footer-education,
+  .home-footer-location,
+  .home-footer-exhibition,
+  .home-footer-faq,
+  .home-footer-museum,
+  .home-footer-vrexhibition,
+  .home-footer-aboutus,
+  .home-footer-privacy {
+    cursor: pointer;
+  }
+
+  .home-accessibility {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+  }
+  .home-accessibility img {
+    cursor: pointer;
+    height: 70px;
+    opacity: 0.5
+  }
+  .home-accessibility :hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width:1600px) and (max-width:2000px) {
+  .home-header {
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .search-bar{
+    height: 40px;
+    margin: auto 70px auto 30px;
+  }
+
+  .hearder-p {
+    color: white;
+    cursor: pointer;
+      
+  }
+
+  .header-logo {
+    height: 70px;
+    margin: 10px 20px auto 30px;
+  }
+
+  .header-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-self: center; */
+  }
+  .header-trans {
+    align-self: center;
+    /* margin: auto 20px auto 20px; */
+    padding-right: 30px;
+    border-right: 1px solid white;
+  }
+
+  .home-welcome {
+    margin-top: 80px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+
+  .home-title {
+    margin: 40px 10px;
+  }
+
+  .home-title-1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin:20px auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .home-title-2,
+  .home-title-3 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px auto;
+  }
+
+  .welcome-p {
+    display: flex;
+    width: 550px;
+    flex-direction: row;
+    font-size: 34px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .welcome-p img {
+    margin-right:10px;
+    height: 40px;
+  }
+
+  .welcome-p u {
+    color: rgb(129, 129, 255);
+    cursor: pointer;
+  }
+
+  .home-picture-word {
+    color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    line-height: 10px;
+    align-items: end;
+    margin-right: 50px;
+
+  }
+  .home-welcome-left {
+    min-width: 570px;
+  }
+  .home-picture {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+    /* width: 1000px;
+    height: 900px; */
+    margin-left: 80px;
+    width: 100%;
+    max-width: 100%;
+    /* min-width: 1100px; */
+    /* min-width: 1000px; */
+    height: auto;
+    column-gap: 40px;
+  }
+  .home-picture img {
+    object-fit: cover;
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+  }
+  .home-picture1 {
+    margin-top: 120px;
+    width: 30%;
+    height: 70%;
+
+  }
+  .home-picture2 {
+    margin-top: 70px;
+    width: 30%;
+    height: 70%;
+  }
+  .home-picture3 {
+    padding-top: 20px;
+    width: 30%;
+    height: 70%;
+  }
+
+
+  .home-welcome-word {
+    flex: 1;
+  }
+  .home-welcome-word1 {
+    margin-left: 120px;
+  }
+
+  .home-onging,
+  .home-upcoming {
+    margin-left: 30px;
+  }
+
+  .home-onging-title, 
+  .home-upcoming-title {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+
+  .home-onging-card,
+  .home-upcoming-card {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* width: 2000px; */
+    /* white-space: nowrap; */
+  }
+
+  .home-onging-card1,
+  .home-upcoming-card1 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .home-onging-card1-content,
+  .home-upcoming-card1-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 24px;
+    /* justify-content: space-between; */
+  }
+
+  .home-onging-card1-title,
+  .home-upcoming-card1-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 30px;
+  }
+
+  .home-onging-card1-date,
+  .home-upcoming-card1-date {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+
+  .home-onging-card1-date img,
+  .home-upcoming-card1-date img {
+    height: fit-content;
+  }
+
+  .home-onging-card1-date p,
+  .home-upcoming-card1-date p {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .home-onging-card1-description,
+  .home-upcoming-card1-description {
+    margin: 30px;
+    font-size: 20px;
+    color: grey;
+    line-height: 30px;
+  }
+
+  .home-footer-image {
+    margin-top: 250px;
+  }
+
+  .home-footer-image img {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: -10px;
+  }
+
+  .home-footer {
+    height: 500px;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 30px;
+  }
+
+  .home-footer-title {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+  }
+
+  .home-footer-content1,
+  .home-footer-content2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+  }
+
+  .home-footer-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home-footer-selector {
+    display: grid;
+    grid-template-columns: 120px 150px 150px;
+    row-gap: 50px;
+    margin-top: 50px;
+    column-gap: 20px;
+    cursor: pointer;
+  }
+
+  .home-footer-contactnum {
+    margin-top: 180px;
+    margin-right: 50px;
+  }
+
+  .home-footer-contactnum u {
+    cursor: pointer;
+  }
+
+  .home-footer-privacy {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .privacy-statement,
+  .copyright-disclaimer {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+    margin: 80px 50px 0 0;
+  }
+
+  .home-footer-ticket,
+  .home-footer-calendar,
+  .home-footer-education,
+  .home-footer-location,
+  .home-footer-exhibition,
+  .home-footer-faq,
+  .home-footer-museum,
+  .home-footer-vrexhibition,
+  .home-footer-aboutus,
+  .home-footer-privacy {
+    cursor: pointer;
+  }
+
+  .home-accessibility {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+  }
+  .home-accessibility img {
+    cursor: pointer;
+    height: 70px;
+    opacity: 0.5
+  }
+  .home-accessibility :hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width:2001px) {
+  .home-header {
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .search-bar{
+    height: 40px;
+    margin: auto 70px auto 30px;
+  }
+
+  .hearder-p {
+    color: white;
+    cursor: pointer;
+      
+  }
+
+  .header-logo {
+    height: 70px;
+    margin: 10px 20px auto 30px;
+  }
+
+  .header-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-self: center; */
+  }
+  .header-trans {
+    align-self: center;
+    /* margin: auto 20px auto 20px; */
+    padding-right: 30px;
+    border-right: 1px solid white;
+  }
+
+  .home-welcome {
+    margin-top: 80px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .welcome-logo img{
+    width: 100%;
+  }
+
+
+
+  .home-title-1 {
+    font-size: 150px;
+    font-weight: bold;
+    margin:20px auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .home-title-2,
+  .home-title-3 {
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px auto;
+  }
+
+  .welcome-p {
+    display: flex;
+    width: 550px;
+    flex-direction: row;
+    font-size: 34px;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .welcome-p img {
+    margin-right:10px;
+    height: 40px;
+  }
+
+  .welcome-p u {
+    color: rgb(129, 129, 255);
+    cursor: pointer;
+  }
+
+  .home-picture-word {
+    color: rgb(182, 182, 182);
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    line-height: 10px;
+    align-items: end;
+    margin-right: 50px;
+
+  }
+
+  .home-picture {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: start;
+    /* width: 1000px;
+    height: 900px; */
+    margin-left: 80px;
+    width: 100%;
+    max-width: 100%;
+    /* min-width: 1000px; */
+    height: auto;
+    column-gap: 40px;
+  }
+  .home-picture img {
+    object-fit: cover;
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+  }
+  .home-picture1 {
+    margin-top: 120px;
+    width: 30%;
+    height: 90%;
+
+  }
+  .home-picture2 {
+    margin-top: 70px;
+    width: 30%;
+    height: 90%;
+  }
+  .home-picture3 {
+    padding-top: 20px;
+    width: 30%;
+    height: 90%;
+  }
+
+
+  .home-welcome-word {
+    flex: 1;
+  }
+  .home-welcome-word1 {
+    margin-left: 120px;
+  }
+
+  .home-onging,
+  .home-upcoming {
+    margin-left: 30px;
+  }
+
+  .home-onging-title, 
+  .home-upcoming-title {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+
+  .home-onging-card,
+  .home-upcoming-card {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* width: 2000px; */
+    /* white-space: nowrap; */
+  }
+
+  .home-onging-card1,
+  .home-upcoming-card1 {
+    background-color: rgb(255, 255, 255);
+    height: 380px;
+    min-width: 500px;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .home-onging-card1-content,
+  .home-upcoming-card1-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 24px;
+    /* justify-content: space-between; */
+  }
+
+  .home-onging-card1-title,
+  .home-upcoming-card1-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 18px 30px;
+  }
+
+  .home-onging-card1-date,
+  .home-upcoming-card1-date {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+  }
+
+  .home-onging-card1-date img,
+  .home-upcoming-card1-date img {
+    height: fit-content;
+  }
+
+  .home-onging-card1-date p,
+  .home-upcoming-card1-date p {
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .home-onging-card1-description,
+  .home-upcoming-card1-description {
+    margin: 30px;
+    font-size: 20px;
+    color: grey;
+    line-height: 30px;
+  }
+
+  .home-footer-image {
+    margin-top: 250px;
+  }
+
+  .home-footer-image img {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: -10px;
+  }
+
+  .home-footer {
+    height: 500px;
+    background-color: black;
+    margin: 0;
+    color: white;
+    padding: 30px;
+  }
+
+  .home-footer-title {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+  }
+
+  .home-footer-content1,
+  .home-footer-content2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+  }
+
+  .home-footer-content2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home-footer-selector {
+    display: grid;
+    grid-template-columns: 120px 150px 150px;
+    row-gap: 50px;
+    margin-top: 50px;
+    column-gap: 20px;
+    cursor: pointer;
+  }
+
+  .home-footer-contactnum {
+    margin-top: 180px;
+    margin-right: 50px;
+  }
+
+  .home-footer-contactnum u {
+    cursor: pointer;
+  }
+
+  .home-footer-privacy {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .privacy-statement,
+  .copyright-disclaimer {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+    margin: 80px 50px 0 0;
+  }
+
+  .home-footer-ticket,
+  .home-footer-calendar,
+  .home-footer-education,
+  .home-footer-location,
+  .home-footer-exhibition,
+  .home-footer-faq,
+  .home-footer-museum,
+  .home-footer-vrexhibition,
+  .home-footer-aboutus,
+  .home-footer-privacy {
+    cursor: pointer;
+  }
+
+  .home-accessibility {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+  }
+  .home-accessibility img {
+    cursor: pointer;
+    height: 70px;
+    opacity: 0.5
+  }
+  .home-accessibility :hover {
+    opacity: 1;
+  }
 }
